@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Meu Site</title>
+  </head>
+  <body>
+    <!-- Mobile Banners Section -->
+    <section id="mobile_banners" class="md:hidden">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              id="image-1"
+              src="img/gta v.jpg"
+              class="mob md:hidden"
+              alt="banner"
+              onclick="redirectTo('https://www.youtube.com/@tropadopaizaogta5')"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Desktop Banners Section -->
+    <section id="desktop_banners" class="hidden md:block">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              id="image-0"
+              src="img/paizao.png"
+              class="desk hidden md:block"
+              alt="banner"
+              onclick="redirectTo('https://www.youtube.com/@tropadopaizaogta5')"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Prêmios Section -->
+    <section class="mb-1">
+      <div class="max-w-7xl mx-auto flex flex-col items-start">
+        <div class="pt-5">
+          <h1 class="text-xl text-slate-100 font-semibold ml-4">
+            ⚡ Upagem De Contas
+          </h1>
+          <p class="ml-4 text-sm text-slate-100 mb-3">
+            Fique Rico ou Bilionario!
+          </p>
+        </div>
+
+        <div
+          class="w-full grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 px-4"
+        >
+          <div
+            class="w-full"
+            onclick="redirectTo('https://www.youtube.com/@tropadopaizaogta5')"
+          >
+            <div class="prize-card">
+              <img
+                class="prize-image"
+                src="img/logo.webp "
+                alt="TIGUAN R LINE ALL BLAC..."
+              />
+              <div class="prize-info">
+                <div class="text-slate-100">>>PROMOCÃO<<</div>
+                <span class="bounce-text">Adquira já!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="bg-blue-500 pt-10 mt-20" id="steps">
+      <div class="max-w-7xl mx-auto flex flex-col items-start">
+        <div class="steps-container">
+          <!-- Step 1 -->
+          <div class="step">
+            <span class="step-number">1</span>
+            <h2 class="step-title">ESCOLHA A AÇÃO</h2>
+            <p>
+              Escolha a ação que gostaria de concorrer, verifique a descrição,
+              regulamento da ação e fotos. Em caso de dúvidas entre em contato
+              com o administrador.
+            </p>
+          </div>
+          <!-- Step 2 -->
+          <div class="step">
+            <span class="step-number">2</span>
+            <h2 class="step-title">SELECIONE SEUS BILHETES</h2>
+            <p>
+              Você pode escolher quantos bilhetes desejar! Mais bilhetes, mais
+              chances de ganhar.
+            </p>
+          </div>
+          <!-- Step 3 -->
+          <div class="step">
+            <span class="step-number">3</span>
+            <h2 class="step-title">FAÇA O PAGAMENTO</h2>
+            <p>
+              Faça o pagamento no(s) método(s) de pagamento(s) disponíveis no
+              site.
+            </p>
+          </div>
+          <!-- Step 4 -->
+          <div class="step">
+            <span class="step-number">4</span>
+            <h2 class="step-title">AGUARDE O RESULTADO</h2>
+            <p>
+              Aguarde a ação. Cruze os dedos! Você pode ser o próximo sorteado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="pb-5 mt-auto bg-zinc-900">
+      <div class="flex flex-col items-center p-2">
+        <nav class="flex">
+          <a
+            class="p-3 cursor-pointer"
+            onclick="redirectTo('https://www.instagram.com/_guilimaadr/')"
+          >
+            <i class="fab fa-instagram text-blue-500 text-2xl on-hover"></i>
+          </a>
+          <a
+            class="p-3 cursor-pointer"
+            onclick="redirectTo('https://wa.me/5581994956795')"
+          >
+            <i class="fab fa-whatsapp text-blue-500 text-2xl on-hover"></i>
+          </a>
+        </nav>
+      </div>
+
+      <div class="footer">
+        <small class="text-slate-100">
+          <div id="pre_footer">
+            <span>Desenvolvido por</span>
+            <a href="https://www.instagram.com/_guilimaadr/">
+              <img
+                src="https://logos.flamingtext.com/City-Logos/Lima-Amped-Logo.png"
+                style="height: 15px; padding-left: 5px"
+                alt=""
+              />
+            </a>
+          </div>
+          © 2022 - Todos os direitos reservados
+        </small>
+      </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+      <div
+        class="cursor-pointer text-slate-100 text-sm font-medium"
+        onclick="redirectTo('https://wa.me/5581994956795')"
+      >
+        <div class="flex items-center justify-center rounded-full">
+          <div class="mr-2">FALE CONOSCO</div>
+          <img
+            src="https://mlksonhador.com.br/images/whatsapp.svg"
+            width="30"
+            alt="WhatsApp"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function redirectTo(url) {
+        window.location.href = url;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  color: #f0f0f0; /* Cor do texto padrão para melhor contraste */
+}
+/* WhatsApp Button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1da851; /* Cor do botão */
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+  transition: background-color 0.3s, transform 0.3s; /* Adiciona transição */
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851; /* Cor mais escura no hover */
+  transform: scale(1.05); /* Efeito de aumento no hover */
+}
+
+/* Swiper styles */
+.swiper {
+  width: 100%;
+  height: auto; /* Altura automática para melhorar responsividade */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Borda arredondada nas imagens */
+}
+
+.prize-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prize-image {
+  max-width: 120px;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 5px; /* Bordas arredondadas na imagem */
+}
+
+.prize-info {
+  padding-left: 10px;
+}
+
+/* Bounce Text */
+.bounce-text {
+  animation: bounce-animation 2s infinite;
+  background-color: green;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: white;
+}
+
+@keyframes bounce-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Steps Section */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaçamento entre os passos */
+}
+
+.step {
+  position: relative;
+  padding: 20px;
+  background-color: #3a3a3a;
+  margin: 10px 0;
+  border-radius: 10px;
+  color: white;
+}
+
+.step-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-title {
+  margin-left: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.on-hover:hover {
+  color: #007bff;
+}
